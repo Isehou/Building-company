@@ -1,11 +1,17 @@
 import React from "react";
 import "./header.css";
 import { Link } from "react-router-dom";
+import logo from "../image/6871.png";
 
 function Header() {
   return (
     <div className="header">
-      <div>Consctruction LOGO</div>
+      <div>
+        <Link className="header__logo" to="/">
+          <img className="logo-img" src={logo} alt="#" />
+          Building Company
+        </Link>
+      </div>
       <div className="header__menu">
         <ul className="header__navbar">
           <li>

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Expletus+Sans:wght@500&display=swap");
 a {
   text-decoration: none;
 }
@@ -8,25 +9,41 @@ a:hover {
   color: black;
 }
 a:active {
-  color: black;
+  color: white;
 }
 
 .header {
   width: auto;
-  height: 60px;
-  background-color: #006633;
+  height: 70px;
+  background-color: #1c6758;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 80px;
   color: white;
+  position: static;
 }
-.header__menu {
+.header__logo {
+  font-size: 18pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Expletus Sans", cursive;
+}
+.header__logo:visited,
+.header__logo:hover,
+.header__logo:active {
+  color: white;
+}
+.logo-img {
+  width: 40px;
+  margin-right: 20px;
 }
 .header__navbar {
   display: flex;
   justify-content: space-between;
-  margin-left: 50px;
+  margin-left: 70px;
   width: 470px;
   color: #fff;
 }
