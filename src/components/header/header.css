@@ -14,7 +14,7 @@ a:active {
 
 .header {
   width: auto;
-  height: 70px;
+  height: 90px;
   background-color: #1c6758;
   display: flex;
   align-items: center;
@@ -24,12 +24,13 @@ a:active {
   position: static;
 }
 .header__logo {
-  font-size: 18pt;
+  font-size: 24pt;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   font-family: "Expletus Sans", cursive;
+  text-transform: uppercase;
 }
 .header__logo:visited,
 .header__logo:hover,
