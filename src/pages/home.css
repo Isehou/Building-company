@@ -1,38 +1,57 @@
 .homepage {
   height: 2000px;
 }
-.homepage__photo-frame {
-  margin-top: 50px;
+.homepage__image-frame {
   width: 100%;
   height: 270px;
   background-color: #ffb100;
 }
 .homepage__contact-us {
   display: flex;
-  background-color: #d6cda4;
+  flex-direction: column;
+  background-color: #ffb100;
   width: 100%;
   height: 120px;
   justify-content: space-between;
   box-sizing: border-box;
+  margin-bottom: 25px;
+}
+.call-card {
+  display: flex;
+  justify-content: start;
+  height: 100%;
 }
 .contact-us__frame {
   width: 33.33%;
   text-transform: uppercase;
-  background-color: #ffb100;
   font-size: 24pt;
   font-family: "Expletus Sans", cursive;
   color: #1c6758;
   text-align: left;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 120px;
+  padding-left: 50px;
+}
+.contact-us__frame p {
+  font-size: 16pt;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .contact-us__frame.frame-two {
   background-color: #1c6758;
   color: #ffb100;
 }
-.contact-us__frame p {
-  font-size: 16pt;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+.contact-us__location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+.phone-logo {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  height: 100%;
+}
+.MdSmartphone {
+  width: 100px;
+  height: 60px;
 }

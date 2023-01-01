@@ -38,8 +38,7 @@ a:active {
   color: white;
 }
 .logo-img {
-  width: 40px;
-  margin-right: 20px;
+  height: 40px;
 }
 .header__navbar {
   display: flex;

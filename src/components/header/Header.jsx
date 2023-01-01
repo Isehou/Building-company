@@ -1,7 +1,7 @@
 import React from "react";
 import "./header.css";
 import { Link } from "react-router-dom";
-import logo from "../image/6871.png";
+import logo from "../image/logo1.png";
 
 function Header() {
   return (
@@ -9,7 +9,6 @@ function Header() {
       <div>
         <Link className="header__logo" to="/">
           <img className="logo-img" src={logo} alt="#" />
-          Building Company
         </Link>
       </div>
       <div className="header__menu">
