@@ -3,12 +3,16 @@ import "./pagestyle.css";
 import "./home.css";
 import SwiperImg from "../components/SwiperImg";
 import { MdSmartphone } from "react-icons/md";
+import { SwiperSlide } from "swiper/react";
+import BuildingTypes from "../components/BuildingTypes";
 
 function Home() {
   return (
     <div className="wrapper">
       <div className="homepage">
-        <SwiperImg className="swiper"></SwiperImg>
+        <SwiperImg className="swiper">
+          <SwiperSlide></SwiperSlide>
+        </SwiperImg>
         <div className="homepage__contact-us">
           <div className="call-card">
             <div className="contact-us__frame">
@@ -40,8 +44,7 @@ function Home() {
             </div>
           </div>
         </div>
-
-        <div className="homepage__image-frame">photo-frame</div>
+        <BuildingTypes></BuildingTypes>
       </div>
     </div>
   );

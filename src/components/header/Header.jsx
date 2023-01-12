@@ -3,7 +3,7 @@ import "./header.css";
 import { Link } from "react-router-dom";
 import logo from "../image/logo1.png";
 
-function Header() {
+function Header(props) {
   return (
     <div className="header">
       <div>
@@ -13,26 +13,15 @@ function Header() {
       </div>
       <div className="header__menu">
         <ul className="header__navbar">
-          <li>
-            <Link className="navbar-btn" to="/">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link className="navbar-btn" to="/maintenance">
-              Maintenance
-            </Link>
-          </li>
-          <li>
-            <Link className="navbar-btn" to="/construction">
-              Construction
-            </Link>
-          </li>
-          <li>
-            <Link className="navbar-btn" to="/about-us">
-              About Us
-            </Link>
-          </li>
+          {props.links.map((el, i) => {
+            return (
+              <li key={i}>
+                <Link className="navbar-btn" to={el.link}>
+                  {el.label}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </div>

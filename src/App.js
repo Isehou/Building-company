@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="App">
       <ScrollToTop />
-      <Header></Header>
+      <Header links={links}></Header>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<AboutUs />} />

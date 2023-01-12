@@ -1,11 +1,7 @@
 .homepage {
   height: 2000px;
 }
-.homepage__image-frame {
-  width: 100%;
-  height: 270px;
-  background-color: #ffb100;
-}
+
 .homepage__contact-us {
   display: flex;
   flex-direction: column;
