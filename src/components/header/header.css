@@ -6,7 +6,7 @@ a:visited {
   color: white;
 }
 a:hover {
-  color: black;
+  color: rgba(230, 230, 230, 0.7);
 }
 a:active {
   color: white;
@@ -18,19 +18,15 @@ a:active {
   background-color: #1c6758;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 0 80px;
   color: white;
   position: static;
 }
 .header__logo {
-  font-size: 24pt;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  font-family: "Expletus Sans", cursive;
-  text-transform: uppercase;
 }
 .header__logo:visited,
 .header__logo:hover,
@@ -43,9 +39,9 @@ a:active {
 .header__navbar {
   display: flex;
   justify-content: space-between;
-  margin-left: 70px;
-  width: 470px;
+  width: auto;
   color: #fff;
+  width: 540px;
 }
 ul {
   list-style-type: none;

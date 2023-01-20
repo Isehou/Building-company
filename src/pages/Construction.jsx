@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import "./pagestyle.css";
-import BuildingTypes from "../components/BuildingTypes";
+import "./page-style.css";
+import BuildingTypes from "../components/items/BuildingTypesImage";
 
 function Construction() {
   return (

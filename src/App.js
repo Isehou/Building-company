@@ -4,17 +4,19 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import AboutUs from "./pages/AboutUs";
 import Construction from "./pages/Construction";
-import Maintenance from "./pages/Maintenance";
+import News from "./pages/News";
+import ContactUs from "./pages/ContactUs";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
-import ScrollToTop from "./components/ScrollToTop";
+import ScrollToTop from "./components/items/ScrollToTop";
 
 function App() {
   const links = [
     { label: "Home", link: "/" },
-    { label: "About Us", link: "/about-us" },
     { label: "Construction", link: "/construction" },
-    { label: "Maintenance", link: "/maintenance" },
+    { label: "About Us", link: "/about-us" },
+    { label: "News", link: "/News" },
+    { label: "Contact Us", link: "/contact-us" },
   ];
   return (
     <div className="App">
@@ -22,9 +24,10 @@ function App() {
       <Header links={links}></Header>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about-us" element={<AboutUs />} />
         <Route path="/construction" element={<Construction />} />
-        <Route path="/maintenance" element={<Maintenance />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/news" element={<News />} />
+        <Route path="/contact-us" element={<ContactUs />} />
       </Routes>
       <Footer></Footer>
     </div>

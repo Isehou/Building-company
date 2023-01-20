@@ -1,12 +1,18 @@
 import React, { useState, useEffect } from "react";
-import "./pagestyle.css";
-import "./home.css";
-import SwiperImg from "../components/SwiperImg";
+import "./pages-style/page-style.css";
+import "./pages-style//home.css";
+import SwiperImg from "../components/items/SwiperImg";
 import { MdSmartphone } from "react-icons/md";
 import { SwiperSlide } from "swiper/react";
-import BuildingTypes from "../components/BuildingTypes";
+import BuildingTypes from "../components/items/BuildingTypesImage";
 
 function Home() {
+  const contactUs = [
+    { title: "London", phone: "049 160-5556-417" },
+    { title: "Berlin", phone: "050 161-5557-702" },
+    { title: "Manchester", phone: "063 162-5570-500" },
+  ];
+
   return (
     <div className="wrapper">
       <div className="homepage">
@@ -20,8 +26,8 @@ function Home() {
                 <MdSmartphone className="MdSmartphone"></MdSmartphone>
               </div>
               <div className="contact-us__location">
-                <h3>London</h3>
-                <p>049 160-5556-417</p>{" "}
+                <h3>{contactUs[0].title}</h3>
+                <p>{contactUs[0].phone}</p>
               </div>
             </div>
             <div className="contact-us__frame frame-two">
@@ -29,8 +35,8 @@ function Home() {
                 <MdSmartphone className="MdSmartphone"></MdSmartphone>
               </div>
               <div className="contact-us__location">
-                <h3>Berlin</h3>
-                <p>049 160-5556-417</p>
+                <h3>{contactUs[1].title}</h3>
+                <p>{contactUs[1].phone}</p>
               </div>
             </div>
             <div className="contact-us__frame">
@@ -38,8 +44,8 @@ function Home() {
                 <MdSmartphone className="MdSmartphone"></MdSmartphone>
               </div>
               <div className="contact-us__location">
-                <h3>Manchester </h3>
-                <p>049 160-5556-417</p>
+                <h3>{contactUs[2].title}</h3>
+                <p>{contactUs[2].phone}</p>
               </div>
             </div>
           </div>
