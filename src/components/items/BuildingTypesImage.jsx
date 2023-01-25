@@ -1,6 +1,6 @@
 import React from "react";
 import img1 from "../image/health-build.jpg";
-import img2 from "../image/2.jpg";
+import img2 from "../image/collaborative-health-education.jpg";
 import img3 from "../image/3.jpg";
 import img4 from "../image/schindler-the-garden-berlin-12.jpg";
 import img5 from "../image/b-residents-main2.jpg";

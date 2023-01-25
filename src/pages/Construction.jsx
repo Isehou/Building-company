@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./page-style.css";
+import "./pages-style/page-style.css";
 import BuildingTypes from "../components/items/BuildingTypesImage";
 
 function Construction() {
